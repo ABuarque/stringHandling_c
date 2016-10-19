@@ -1,0 +1,28 @@
+# stringHandling_c
+
+Available functions:
+
+//Check if it is char
+boolean isChar(char c); 
+//Check if it is capital char
+boolean isCapitalChar(char c);
+//Check if it is small char 
+boolean isSmallChar(char c); 
+//Check how many 'char' there are
+int checkOccurence(String string, char c); 
+//Return the string size
+int stringSize(String string);
+//Make it capital 
+char getCapitalChar(char c);
+//Make it small 
+char getSmallChar(char c); 
+//Make it in capital size
+String getCapitalSize(String string);
+//Make it in small size 
+String getSmallSize(String string); 
+//Copy the s2 in s1
+String copyString(String s1, String s2);
+//Parses an integer into a string
+String intToString(int integer);
+//Parses a intring in a integer
+int stringToInteger(String string);
