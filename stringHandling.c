@@ -76,14 +76,31 @@ char getCapitalChar(char c) {
 			return capitalSize[i];
 }
 
- /*
-char getSmallChar(char c) {
-	if(isSmallChar(c))
-		return c;
-	for(int i = 0; i < sizeArrayChars; i++) {
-		if(capitalSize[i] == c)
-			return smallSize[i];
+String lowerToUpper(String s) {
+	int size = strlen(s);
+	String upper = (String) malloc(sizeof(size));
+	int i = 0;
+	while(s[i] != '\0') {
+		if(s[i] >= 'a' && s[i] <= 'z') 
+			upper[i] = s[i] - 32;
+		else
+			upper[i] = s[i];
+		i++;
 	}
-} */
+	return upper;
+} 
 
-//String getCapitalSize(String string) {return toupper(string);}
+//upper to lower
+String upperToLower(String s) {
+	int size = strlen(s);
+	String lower = (String) malloc(sizeof(size));
+	int i = 0;
+	while(s[i] != '\0') {
+		if(s[i] >= 'A' && s[i] <= 'Z') 
+			lower[i] = s[i] + 32;
+		else 
+			lower[i] = s[i];
+		i++;
+	}
+	return lower;
+}
