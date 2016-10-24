@@ -21,9 +21,9 @@ char getCapitalChar(char c);
 //Make it small 
 char getSmallChar(char c); 
 //Make it in capital size
-String getCapitalSize(String string);
+String lowerToUpper(String string);
 //Make it in small size 
-String getSmallSize(String string); 
+String upperToLower(String string); 
 //Copy the s2 in s1
 String copyString(String s1, String s2);
 //Parses an integer into a string
