@@ -6,22 +6,6 @@
 
 //gcc -c stringHandling.c -std=c99 -lm
 
-const int sizeArrayChars = 27;
-
-char capitalSize[] = {'A', 'B', 'C', 'D', 'E',
-					  'F', 'G', 'H', 'I', 'J', 
-					  'K', 'L', 'M', 'N', 'O',
-				      'P', 'Q', 'R', 'S', 'T',
-					  'U', 'V', 'X', 'Z', 'W', 
-					  'K', 'Y'};
-
-char smallSize[] = {'a', 'b', 'c', 'd', 'e',
-					'f', 'g', 'h', 'i', 'j', 
-					'k', 'l', 'm', 'n', 'o',
-				    'p', 'q', 'r', 's', 't',
-					'u', 'v', 'x', 'z', 'w', 
-					'k', 'y'};
-
 String copyString(String s1, String s2) {
 	return strcpy(s1, s2);
 }
@@ -71,9 +55,13 @@ int checkOccurence(String string, char c) {
 char getCapitalChar(char c) {
 	if(isCapitalChar(c))
 		return c;
-	for(int i = 0; i < sizeArrayChars; i++)
-		if(smallSize[i] == c)
-			return capitalSize[i];
+	return c - 32;
+}
+
+char getSmallChar(char c) {
+	if(isSmallChar(c))
+		return c;
+	return c + 32;
 }
 
 String lowerToUpper(String s) {
@@ -90,7 +78,6 @@ String lowerToUpper(String s) {
 	return upper;
 } 
 
-//upper to lower
 String upperToLower(String s) {
 	int size = strlen(s);
 	String lower = (String) malloc(sizeof(size));
