@@ -6,7 +6,7 @@
 Available functions:
 
 ##boolean isChar(char c); 
-###heck if it is char
+###check if it is char
 
 ##boolean isCapitalChar(char c);
 ###Check if it is capital char
@@ -39,7 +39,7 @@ Available functions:
 ###Parses an integer into a string
 
 ##int stringToInteger(String string);
-###Parses a intring in a integer
+###Parses a string into a integer
 
 ##boolean isEqual(String, String); 
-###Compare to strings (1: true, 0: false)
+###Compare two strings (1: true, 0: false)
