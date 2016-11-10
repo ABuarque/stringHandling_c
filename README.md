@@ -40,3 +40,6 @@ Available functions:
 
 ##int stringToInteger(String string);
 ###Parses a intring in a integer
+
+##boolean isEqual(String, String); 
+###Compare to strings (1: true, 0: false)
