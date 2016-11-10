@@ -91,3 +91,7 @@ String upperToLower(String s) {
 	}
 	return lower;
 }
+
+boolean isEqual(String s1, String s2) {
+	return !strcmp(s1, s2);
+} 
