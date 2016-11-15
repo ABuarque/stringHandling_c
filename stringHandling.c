@@ -95,3 +95,7 @@ String upperToLower(String s) {
 boolean isEqual(String s1, String s2) {
 	return !strcmp(s1, s2);
 } 
+
+String concat(String s1, String s2) {
+	strcat(s1, s2);
+}

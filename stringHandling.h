@@ -33,4 +33,7 @@ int stringToInteger(String string);
 //Compare to strings (1: true, 0: false)
 boolean isEqual(String, String); 
 
+//Contatenate two strings
+String concat(String, String);
+
 #endif
