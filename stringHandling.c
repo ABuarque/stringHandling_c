@@ -99,3 +99,13 @@ boolean isEqual(String s1, String s2) {
 String concat(String s1, String s2) {
 	strcat(s1, s2);
 }
+
+String substring(String s, int begin, int end) {
+	String sub = (String) malloc(sizeof(char) * (end - begin + 2));
+	int i, j;
+	for(i = begin, j = 0; i <= end; i++, j++) {
+		sub[j] = s[i];
+	}
+	sub[i] = '\0';
+	return sub;
+}
