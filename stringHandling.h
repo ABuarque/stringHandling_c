@@ -29,7 +29,7 @@ String copyString(String s1, String s2);
 //Parses an integer into a string
 String intToString(int integer);
 //Parses a intring in a integer
-int stringToInteger(String string);
+int stringToInt(String string);
 //Compare to strings (1: true, 0: false)
 boolean isEqual(String, String); 
 
